@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+float vol_cilindro(float r, float a);
+int main()
+{
+     float radio, volumen, altura;
+     int op;
+     char c;
+    do {
+        cout<<"---MENU---";
+        cout<<"opcion 0.- notas";
+        cout<<"opcion 1.- volumen";
+        cout<<"opcion 2 salir";
+        cin<<op; 
+       switch (Op) {
+    case '0':
+         
+   cout<<"ingresar radio"; cin>>radio;
+   cout<<"ingresar volumen"; cin>>volumen;
+   cout<<"ingresar altura"; cin>>altura;
+   volumen= vol_cilindro (radio, altura);
+   cout<<volumen;
+        break;
+    
+    case '1':
+        cout<<"Aprobado 80-89";
+        break;
+    
+    case '2':
+        cout<<"Aprobado 70 -79";
+        break;
+    
+ 
+    
+
+        
+    } 
+    while (Op !=0);
+    
+    return 0;
+}
+
+float vol_cilindro(float r, float a){
+    float s,v;
+    v=3.1416;
+    s=v*r*r*a;
+    return s;
+}
